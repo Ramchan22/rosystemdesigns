@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2 class="title">{{shopName}}</h2>
+            <p class="subtitle">Login to manage your services</p>
+
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label for="email">Username or Email</label>
+                    <input type="text" formControlName="userName" placeholder="Enter your Username or email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" formControlName="password" placeholder="Enter your password" required>
+                </div>
+
+                <button type="submit" [disabled]="loginForm.invalid" class="btn-login">Login</button>
+                <button type="button" class="btn-cancel">SignUp</button>
+            </form>
+        </div>
+
+        <!-- Water animation -->
+        <!-- <div class="water-animation">
+            <div class="drop"></div>
+            <div class="drop"></div>
+            <div class="drop"></div>
+        </div> -->
+    </div>
+</body>
+
+</html>

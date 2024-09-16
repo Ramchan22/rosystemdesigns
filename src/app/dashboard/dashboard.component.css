@@ -1,0 +1,98 @@
+/* app.component.css */
+
+.hero {
+    background-image: url('/assets/images/dashboard/eclipse_moon_circle_138151_1280x800.jpg');
+    background-size: cover;
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.hero .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-form input {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.categories {
+    padding: 40px 0;
+    background-color: #b7e2e6;
+}
+
+.categories .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.category-card {
+    padding: 20px;
+    background-color: #9a92e4;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.how-it-works {
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Add this to your styles.css or app component's css file */
+.top-nav {
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    background-color: #f8f9fa; /* Adjust as needed */
+}
+
+.logout-button {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px 16px;
+    background-color: #ff4d4d; /* Customize button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.logout-button:hover {
+    background-color: #e63946; /* Hover color */
+}

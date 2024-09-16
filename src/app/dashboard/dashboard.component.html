@@ -1,0 +1,27 @@
+<!-- app.component.html -->
+
+<header class="top-nav">
+    <div class="container">
+        <button class="logout-button" (click)="logout()">Logout</button>
+    </div>
+</header>
+
+<div class="hero">
+    <div class="container">
+        <h1>{{title}}</h1>
+        <p>{{quotes2}}</p>
+        <!-- <form class="search-form">
+            <input type="text" placeholder="What?" />
+            <input type="text" placeholder="Location?" />
+            <button type="submit">Search</button>
+        </form> -->
+    </div>
+</div>
+
+<div class="categories">
+    <div class="container">
+        <div class="category-card" (click)="navigateTo('/romachinedetails')">Water Purifier Models</div>
+        <div class="category-card" (click)="navigateTo('/employeedetails')">Employee Details</div>
+        <div class="category-card" (click)="navigateTo('/roservicedetails')">Service Details</div>
+    </div>
+</div>

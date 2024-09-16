@@ -1,0 +1,124 @@
+<form [formGroup]="roSericeForm" (ngSubmit)="onSubmit()">
+    <div class="container">
+        <!-- Shop Name Section -->
+        <div class="shop-header">
+            <h1>RAM AQUA TECH</h1>
+        </div>
+
+        <!-- Distillery Details Section -->
+        <div class="section distillery-details">
+            <h3>Customer Details</h3>
+            <div class="row">
+
+                <div class="form-group">
+                    <label for="isNewCustomer">Is New Customer?</label>
+                    <div class="radio-group">
+                        <input type="radio" formControlName="isNewCustomer" id="yes" value="yes" />
+                        <label for="yes">Yes</label>
+                        <input type="radio" formControlName="isNewCustomer" id="no" value="no" />
+                        <label for="no">No</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="customerName">Customer Name</label>
+                    <input type="text" formControlName="customerName" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label for="customerMobileNumber">Customer Mobile Number</label>
+                    <input type="number" formControlName="customerMobileNumber" class="form-control" maxlength="10" />
+                </div>
+
+                <div class="form-group">
+                    <label for="customerArea">Customer Area</label>
+                    <input type="text" formControlName="customerArea" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label for="customerAddress">Customer Address</label>
+                    <input type="text" formControlName="customerAddress" class="form-control" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Service Details Section -->
+        <div class="section allotment-details">
+            <h3>Service Details</h3>
+            <div class="row">
+                <div class="form-group">
+                    <label for="machineModelValue">Machine Model</label>
+                    <input type="text" formControlName="machineModelValue" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label for="materialPrice">Material Price (Rs.)</label>
+                    <input type="number" formControlName="materialPrice" class="form-control" step="0.01" />
+                </div>
+
+                <div class="form-group">
+                    <label for="regularRetailPrice">Reqular Retail Price (Rs.)</label>
+                    <input type="number" formControlName="regularRetailPrice" class="form-control" step="0.01" />
+                </div>
+
+                <div class="form-group">
+                    <label for="deliveredPrice">Finalized Price (Rs.)</label>
+                    <input type="number" formControlName="deliveredPrice" class="form-control" step="0.01" />
+                </div>
+
+                <div class="form-group">
+                    <label for="profit">Profit (Rs.)</label>
+                    <input type="number" formControlName="profit" class="form-control" step="0.01" />
+                </div>
+
+                <div class="form-group">
+                    <label for="isNewMachineOrder">is New Machine?</label>
+                    <div class="radio-group">
+                        <input type="radio" formControlName="isNewMachineOrder" id="yes" value="yes" />
+                        <label for="yes">Yes</label>
+                        <input type="radio" formControlName="isNewMachineOrder" id="no" value="no" />
+                        <label for="no">No</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="isWarrentyCovers">is Warrenty Covers?</label>
+                    <div class="radio-group">
+                        <input type="radio" formControlName="isWarrentyCovers" id="yes" value="yes" />
+                        <label for="yes">Yes</label>
+                        <input type="radio" formControlName="isWarrentyCovers" id="no" value="no" />
+                        <label for="no">No</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="numberOfWarrentyDays">No of Warrenty Days</label>
+                    <input type="number" formControlName="numberOfWarrentyDays" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label for="serviceDetails">Service Details</label>
+                    <input type="text" formControlName="serviceDetails" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label for="serviceDate">Select Date</label>
+                    <input type="date" formControlName="serviceDate" class="form-control" />
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Other form fields here -->
+
+            <!-- Button Group Section -->
+            <div class="button-group">
+                <button class="btn btn-submit">Save</button>
+                <button class="btn btn-cancel" (click)="onCancel()">Cancel</button>
+            </div>
+        </div>
+
+    </div>
+</form>

@@ -1,0 +1,129 @@
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url('/assets/images/dashboard/eclipse_moon_circle_138151_1280x800.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Shop header styles */
+.shop-header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Slightly transparent background */
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.shop-header h1 {
+    font-size: 36px;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Section styles */
+.section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.section h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Row and form input styles */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1 1 45%;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #555;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Readonly input styling */
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: #e9ecef;
+    opacity: 1;
+}
+
+/* Radio group styling */
+.radio-group {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Button Group Styling */
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.button-group .btn {
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-group .btn-preview {
+    background-color: #00bcd4;
+    color: white;
+}
+
+.button-group .btn-draft {
+    background-color: #ffa500;
+    color: white;
+}
+
+.button-group .btn-submit {
+    background-color: #18ad0a;
+    color: white;
+}
+
+.button-group .btn-cancel {
+    background-color: #e00d0d;
+    color: white;
+}
+
+/* Add hover effect */
+.button-group .btn:hover {
+    opacity: 0.8;
+}
