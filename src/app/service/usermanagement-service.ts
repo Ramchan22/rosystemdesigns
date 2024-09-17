@@ -26,4 +26,12 @@ export class UserManagementService {
         return this.http.get(url, { headers: header });
     }
 
+    getAllUserDetail(): Observable<any> {
+        const url = this.baseURL.concat('user/getAllUser');
+
+        let header = this.commonService.getTransferIp();
+
+        return this.http.get(url, { headers: header });
+    }
+
 }

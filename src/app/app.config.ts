@@ -7,12 +7,14 @@ import { UserManagementService } from './service/usermanagement-service';
 import { RoService } from './service/ro-service';
 import { CommonService } from './service/common-service';
 import { LocalStorageService } from './service/localstorage-service';
+import { CommonModule } from '@angular/common';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
     provideAnimationsAsync(),
     provideHttpClient(),
+    CommonModule,
     UserManagementService,
     RoService,
     CommonService,

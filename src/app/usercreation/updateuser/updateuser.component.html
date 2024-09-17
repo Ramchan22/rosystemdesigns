@@ -1,0 +1,29 @@
+<div class="container">
+    <!-- Shop Name Section -->
+    <h1 class="shop-name">RAM AQUA TECH</h1>
+</div>
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Employee ID</th>
+                <th>Employee Name</th>
+                <th>Mobile Number</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let record of records">
+                <td>{{ record.employeeId }}</td>
+                <td>{{ record.firstName }}</td>
+                <td>{{ record.mobileNumber }}</td>
+                <td>{{ record.isAdminUser ? 'ADMIN' : record.isOfficeAssistant ? 'EMPLOYEE' : '-' }}</td>
+                <td>
+                    <button (click)="viewRecord(record.id)">View</button>
+                    <button (click)="editRecord(record.id)">Edit</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
