@@ -26,7 +26,7 @@ export const routes: Routes = [
     },
     {
         path: 'employeedetails',
-        component: EmployeedetailsComponent
+        component: UpdateuserComponent
     },
     {
         path: 'roservicedetails',
