@@ -16,6 +16,7 @@
             <tr>
                 <th>Customer Name</th>
                 <th>Service Date</th>
+                <th>Service Details</th>
                 <th>Area</th>
                 <th>Machine Model</th>
                 <th>Price</th>
@@ -25,6 +26,7 @@
             <tr *ngFor="let record of records">
                 <td>{{ record.customerName }}</td>
                 <td>{{ record.serviceDate }}</td>
+                <td>{{ record.serviceDetails }}</td>
                 <td>{{ record.customerArea }}</td>
                 <td>{{ record.machineModelValue }}</td>
                 <td>{{ record.deliveredPrice }}</td>
