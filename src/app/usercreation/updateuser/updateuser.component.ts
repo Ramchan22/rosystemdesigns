@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { UserManagementService } from '../../service/usermanagement-service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-updateuser',
@@ -12,10 +13,12 @@ import { UserManagementService } from '../../service/usermanagement-service';
   styleUrl: './updateuser.component.css'
 })
 export class UpdateuserComponent {
+  
   records: any[] = [];
 
   constructor(
     private userManagementService: UserManagementService,
+    private router: Router,
   ) { }
 
   ngOnInit(): void {
@@ -40,6 +43,10 @@ export class UpdateuserComponent {
   editRecord(id: number): void {
     console.log('Edit record with ID:', id);
     // Implement your edit logic here
+  }
+
+  onCancel() {
+    this.router.navigate(['/dashboard']);
   }
 
 }
