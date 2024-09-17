@@ -1,0 +1,77 @@
+.container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.shop-name {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #007bff;
+    /* Customize as per your branding */
+}
+
+.table-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Button Group Styling */
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.button-group .btn {
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-group .btn-preview {
+    background-color: #00bcd4;
+    color: white;
+}
+
+.button-group .btn-draft {
+    background-color: #ffa500;
+    color: white;
+}
+
+.button-group .btn-add {
+    background-color: #18ad0a;
+    color: white;
+}
+
+.button-group .btn-cancel {
+    background-color: #e00d0d;
+    color: white;
+}
+
+/* Add hover effect */
+.button-group .btn:hover {
+    opacity: 0.8;
+}

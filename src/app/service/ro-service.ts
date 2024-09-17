@@ -20,4 +20,10 @@ export class RoService {
         return this.http.post(url, data, { headers: header });
     }
 
+    lasySearch(data: any): Observable<any> {
+        const url = this.baseURL.concat('serviceDetails/lazySearch');
+        let header = this.commonService.getTransferIp();
+        return this.http.post(url, data, { headers: header });
+    }
+
 }

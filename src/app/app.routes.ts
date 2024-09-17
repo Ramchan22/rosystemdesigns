@@ -6,6 +6,7 @@ import { EmployeedetailsComponent } from './employeedetails/employeedetails.comp
 import { RoservicedetailsComponent } from './roservicedetails-list/add/add.component';
 import { CreateuserComponent } from './usercreation/createuser/createuser.component';
 import { UpdateuserComponent } from './usercreation/updateuser/updateuser.component';
+import { ListComponent } from './roservicedetails-list/list/list.component';
 
 export const routes: Routes = [
     {
@@ -39,5 +40,9 @@ export const routes: Routes = [
     {
         path: 'user/list',
         component: UpdateuserComponent
+    },
+    {
+        path: 'service/list',
+        component: ListComponent
     },
 ];

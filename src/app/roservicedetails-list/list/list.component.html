@@ -1,0 +1,46 @@
+<div class="container">
+    <!-- Shop Name Section -->
+    <h1 class="shop-name">RAM AQUA TECH</h1>
+</div>
+<div class="container">
+    <div class="button-group">
+        <button class="btn btn-add" (click)="addNewService()">Add New Service</button>
+    </div>
+    <div class="button-group">
+        <button class="btn btn-cancel" (click)="onCancel()">Back</button>
+    </div>
+</div>
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Customer Name</th>
+                <th>Service Date</th>
+                <th>Area</th>
+                <th>Machine Model</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let record of records">
+                <td>{{ record.customerName }}</td>
+                <td>{{ record.serviceDate }}</td>
+                <td>{{ record.customerArea }}</td>
+                <td>{{ record.machineModelValue }}</td>
+                <td>{{ record.deliveredPrice }}</td>
+                <!-- <td>{{ record.isAdminUser ? 'ADMIN' : record.isOfficeAssistant ? 'EMPLOYEE' : '-' }}</td> -->
+                <!-- <td>
+                    <button (click)="viewRecord(record.id)">View</button>
+                    <button (click)="editRecord(record.id)">Edit</button>
+                </td> -->
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+<!-- <div class="container">
+    <div class="button-group">
+        <button class="btn btn-cancel" (click)="onCancel()">Back</button>
+    </div>
+</div> -->

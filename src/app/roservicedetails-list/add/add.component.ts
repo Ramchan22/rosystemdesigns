@@ -76,7 +76,7 @@ export class RoservicedetailsComponent {
 
         if (res != null) {
           if (res.errorCode == 200) {
-            this.router.navigate(['/dashboard']);
+            this.router.navigate(['/service/list']);
           } else {
             console.log(res.userDisplayMesg);
           }
@@ -91,7 +91,7 @@ export class RoservicedetailsComponent {
   }
 
   onCancel() {
-    this.router.navigate(['/dashboard']);
+    this.router.navigate(['/service/list']);
   }
 
 }
